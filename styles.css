@@ -398,67 +398,158 @@ h2 {
 
 @media (max-width: 700px) {
   .site-header {
-    width: min(100% - 28px, 1080px);
-    padding: 20px 0;
+    width: min(100% - 24px, 1080px);
+    padding: 16px 0;
+  }
+
+  .brand,
+  .top-nav a {
+    font-size: 0.82rem;
+  }
+
+  .top-nav {
+    gap: 14px;
   }
 
   .site-shell {
-    width: min(100% - 28px, 860px);
+    width: min(100% - 24px, 860px);
   }
 
   .intro {
-    padding: 112px 0 72px;
+    min-height: 100svh;
+    gap: 12px;
+    padding: 94px 0 58px;
+    justify-content: center;
   }
 
   .portrait-wrap {
-    width: 168px;
+    width: min(44vw, 156px);
+    margin-bottom: 8px;
+  }
+
+  .portrait {
+    box-shadow: 0 0 0 7px var(--bg), 0 16px 42px rgba(0, 0, 0, 0.38);
   }
 
   .drone-scene {
-    top: 76px;
-    height: 58vh;
+    top: 66px;
+    height: 45vh;
+    opacity: 0.7;
   }
 
   .drone {
-    width: 86px;
+    width: 70px;
+    opacity: 0.58;
   }
 
   .laser {
-    top: 42px;
-    left: 16px;
-    width: 54px;
-    height: 45vh;
+    top: 34px;
+    left: 13px;
+    width: 44px;
+    height: 34vh;
+    filter: blur(2.4px);
   }
 
   .laser-two {
-    left: 12px;
-    width: 62px;
+    left: 10px;
+    width: 50px;
   }
 
   .laser-three {
-    left: 20px;
-    width: 46px;
+    left: 16px;
+    width: 38px;
   }
 
   .forest-layer {
-    bottom: 16%;
-    width: 170vw;
-    height: 190px;
-    opacity: 0.42;
-    filter: blur(3.6px) saturate(0.86) brightness(0.86);
+    bottom: 19%;
+    width: 190vw;
+    height: 150px;
+    opacity: 0.28;
+    filter: blur(4.6px) saturate(0.78) brightness(0.72);
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 13vw, 3.35rem);
+    line-height: 1;
+  }
+
+  .summary {
+    font-size: 0.98rem;
+  }
+
+  .keywords {
+    max-width: 310px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .social-links {
+    max-width: 300px;
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-links svg {
+    width: 20px;
+    height: 20px;
   }
 
   .research {
-    padding: 56px 0 88px;
+    padding: 52px 0 80px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 
   .research-item {
     grid-template-columns: 1fr;
     gap: 10px;
+    padding: 22px 0;
+  }
+
+  .research-item h3 {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .research-item .meta,
+  .research-item p,
+  .research-link {
+    font-size: 0.82rem;
   }
 
   .research-link {
     justify-self: start;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand {
+    max-width: 128px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .top-nav {
+    gap: 10px;
+  }
+
+  .intro {
+    padding-top: 86px;
+  }
+
+  .portrait-wrap {
+    width: 138px;
+  }
+
+  .social-links {
+    max-width: 260px;
   }
 }
 

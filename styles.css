@@ -85,7 +85,7 @@ a:focus-visible {
 .drone-scene {
   position: absolute;
   z-index: 0;
-  top: 82px;
+  top: clamp(150px, 18vh, 220px);
   left: 50%;
   width: 100vw;
   height: min(68vh, 620px);
@@ -190,7 +190,7 @@ a:focus-visible {
     linear-gradient(90deg, var(--bg) 0%, rgba(20, 20, 20, 0) 14%, rgba(20, 20, 20, 0) 86%, var(--bg) 100%),
     url("assets/eucalyptus-forest-bg.png") center top / cover no-repeat;
   opacity: 1.0;
-  filter: blur(3.2px) saturate(0.9) brightness(0.9);
+  filter: blur(0.5px) saturate(0.9) brightness(0.9);
   pointer-events: none;
   mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 76%, transparent 100%);
 }
@@ -442,7 +442,7 @@ h2 {
   }
 
   .drone-scene {
-    top: 66px;
+    top: 110px;
     height: 45vh;
     opacity: 0.7;
   }

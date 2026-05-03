@@ -397,6 +397,19 @@ h2 {
   white-space: nowrap;
 }
 
+.site-footer {
+  width: min(100% - 48px, 860px);
+  margin: 0 auto;
+  padding: 0 0 34px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 @media (max-width: 700px) {
   .site-header {
     left: 0;
@@ -539,6 +552,11 @@ h2 {
 
   .research-link {
     justify-self: start;
+  }
+
+  .site-footer {
+    width: min(100% - 24px, 860px);
+    padding-bottom: 28px;
   }
 }
 
